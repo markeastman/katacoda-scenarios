@@ -1,11 +1,9 @@
 {
-  "title": "My First Scenario",
-  "description": "Learning how to educate via Katacoda",
+  "title": "My Second Scenario",
+  "description": "Learning how to connect back to image for ui",
   "details": {
     "steps": [
-      { "title": "Title", "text": "step1.md" },
-      { "title": "Goes", "text": "step2.md" },
-      { "title": "Here", "text": "step3.md" }
+      { "title": "Title", "text": "step1.md" }
     ],
     "intro": {
       "text": "intro.md",
@@ -16,9 +14,9 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "terminal-iframe"
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "ubuntu"
   }
 }
