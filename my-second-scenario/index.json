@@ -1,9 +1,9 @@
 {
-  "title": "My Second Scenario",
-  "description": "Learning how to connect back to image for ui",
+  "title": "Web Server within Docker",
+  "description": "Build a docker image and run a web server nginx within it",
   "details": {
     "steps": [
-      { "title": "Title", "text": "step1.md",
+      { "title": "Build the docker", "text": "step1.md",
         "code": "env-init.sh" }
     ],
     "intro": {
