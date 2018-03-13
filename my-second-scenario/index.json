@@ -4,7 +4,7 @@
   "details": {
     "steps": [
       { "title": "Title", "text": "step1.md",
-        "courseData": "env-init.sh" }
+        "code": "env-init.sh" }
     ],
     "intro": {
       "text": "intro.md"
