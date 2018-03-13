@@ -26,7 +26,8 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-iframe"
+    "uilayout": "terminal-iframe",
+    "dashboards": [{ "name": "Browser", "port": 80, "host": "host01" }]
   },
   "backend": {
     "imageid": "ubuntu"
