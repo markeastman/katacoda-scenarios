@@ -1,1 +1,1 @@
-git clone https://github.com/markeastman/katacoda-scenarios/my-first-scenario
+git clone https://github.com/katacoda/scenario-example
