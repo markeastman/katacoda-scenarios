@@ -11,6 +11,18 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "Dockerfile",
+          "target": "~/"
+        },
+        {
+          "file": "index.html",
+          "target": "~/"
+        }
+      ]
     }
   },
   "environment": {
