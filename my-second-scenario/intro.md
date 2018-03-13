@@ -1,1 +1,1 @@
-You will not learn much in this scenario but perhaps others
+You will not learn much about connecting via an iframe
