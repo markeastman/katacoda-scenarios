@@ -3,7 +3,7 @@
   "title": "Experiments",
   "courses": [
     {
-      "external_link": "https://www.katacoda.com/markeastman/hello-world",
+      "external_link": "https://www.katacoda.com/markeastman/courses/experiments/hello-world",
       "course_id": "hello-world",
       "title": "Hello World"
     },
