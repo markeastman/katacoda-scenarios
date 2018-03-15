@@ -1,5 +1,6 @@
 {
   "title": "EAP Courses",
+  "private": false,
   "courses": [
     {
       "external_link": "https://learn.openshift.com/introduction/",
