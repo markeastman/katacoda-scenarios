@@ -4,7 +4,7 @@
   "courses": [
     {
       "external_link": "https://www.katacoda.com/markeastman/courses/eap-courses/boot-101",
-      "course_id": "Boot up and start server",
+      "course_id": "boot-101",
       "title": "boot 101"
     }
   ]
