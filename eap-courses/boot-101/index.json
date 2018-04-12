@@ -20,6 +20,9 @@
     "steps": [{
       "title": "Step 1 - Create an Initial Project",
       "text": "01-creating-an-initial-project.md"
+    }, {
+      "title": "Step 2 - Deploying an New Application",
+      "text": "02-deploying-a-new-application.md"
     }],
     "intro": {
       "code": "set-env.sh",
@@ -27,6 +30,14 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "jboss-image-streams",
+          "target": "~/"
+        }
+      ]
     }
   }
 }
