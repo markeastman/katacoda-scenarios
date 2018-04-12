@@ -34,7 +34,7 @@
     "assets": {
       "host01": [
         {
-          "file": "jboss-image-streams",
+          "file": "jboss-image-streams.json",
           "target": "~/"
         }
       ]
