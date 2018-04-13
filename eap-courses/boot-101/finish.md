@@ -1,19 +1,54 @@
-Congratulations!  You just finished learning how to deploy and run your own Java batch application
- on OpenShift. Pretty simple isn't it?
+Congratulations!  You just finished learning how to deploy and run an eap sample application
 
 ## What's next?
 
-Now you are probably interested in expanding your work with OpenShift in a less structured environment. You can start with setting up your own OpenShift environment if you haven't already or if you have maybe expanding on what you have learned to build your own Java EE batch applications. 
-For hints and ideas of where to start next check out the resources below.
+I will be putting more scenarios upp on the learning system to show you other eap related samples. 
+However, if you want to try some of the other sample applications you can amend the fields in the template to refer to 
+another sample instead of the kitchensink. These can be edited when processing the template as per the previous tutorial page.
 
-### JBeret Resources:
-* [Sample Application Used in this Course](https://github.com/jberet/intro-jberet)
-* [Project JBeret Github Source Repository](https://github.com/jberet/jsr352)
-* [Project JBeret Community Forum](https://developer.jboss.org/en/jberet/)
-* [Project JBeret JIRA Issues](https://issues.jboss.org/browse/JBERET-355?jql=project%20%3D%20JBERET)
-* [WildFly JSR 352 Batch Subsystem Configuration](https://docs.jboss.org/author/display/WFLY/Batch+%28JSR-352%29+Subsystem+Configuration)
-* [Project JBeret Docs](http://docs.jboss.org/jberet/latest/)
-* [JSR 352 : Batch Applications for the Java Platform Spec](https://jcp.org/en/jsr/detail?id=352)
+### eap samples:
+* batch-processing
+* bmt
+* cmt
+* contacts-jquerymobile
+* ejb-in-war
+* ejb-timer
+* greeter
+* helloworld
+* helloworld-html5
+* helloworld-mdb
+* helloworld-rs
+* helloworld-singleton
+* helloworld-ws
+* hibernate
+* jaxrs-client
+* jsonp
+* jta-crash-rec
+* kitchensink
+* kitchensink-angularjs
+* kitchensink-jsp
+* kitchensink-ml
+* logging-tools
+* managed-executor-service
+* numberguess
+* payment-cdi-event
+* servlet-async
+* servlet-filterlistener
+* shrinkwrap-resolver
+* spring-greeter
+* spring-kitchensink-basic
+* spring-kitchensink-springmvctest
+* spring-resteasy
+* tasks
+* tasks-jsf
+* temperature-converter
+* thread-racing
+* websocket-client
+* websocket-endpoint
+* websocket-hello
+* xml-jaxp
+
+For more details of the samples please look at [eap samples](https://github.com/jboss-developer/jboss-eap-quickstarts/)
 
 ### OpenShift Development Tooling:
 * [Minishift](https://www.openshift.org/minishift/)

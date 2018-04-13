@@ -1,33 +1,3 @@
-We are goping to run one of the samples that comes with eap called _kitchensink_. Katacoda itself does not come with
-the latest version of eap and so we have to inform the openshift environment how to use the latest image for eap.
-To do this we need to load the image stream from a public repository via the command:
-
-``oc replace --force -f https://raw.githubusercontent.com/jboss-openshift/application-templates/master/eap/eap71-image-stream.json``{{execute}}
-
-And the output should look something like this:
-
-```text
-imagestream "jboss-eap71-openshift" replaced
-```
-
-To create an application within the new project called 'eap-demo' we could issue a command to pull the template from
-a public repository:
-``oc replace --force -f https://raw.githubusercontent.com/jboss-openshift/application-templates/master/eap/eap71-basic-s2i.json``{{execute}}
-
-However the memory requirements of this template is set to 1 Gigabyte and this is normally too large for the environment to handle.
-In this case we are going to use a different process for creating the application within the project.
-
-Go to the _Browser_ tab and log in using the same developer userid as above. Within the overview click the eap-demo project if not already selected.
-On this page you should be able to see a large button called 'Add to project' or at the top right you should see the same text.
-Click the text to be shown the dialogue that will allow us to import the template directly. This page has three tab areas near
-the top, the catalogue, deploy image, and import YAML / JSON. We want to select the import YAML / JSON option.
-We need to paste the json for the reduced memory template into the main text box and then click the create button just below the edit box.
-
-Within the home folder of this environment I have added two files to help you. The first, _eap71-image-stream.json_, is a copy of the imagestream json file that you
-imported using the terminal. The second is a copy of the _eap71-basic-s2i.json_ file that is this required template. You can open the file and copy the text
-or use the text below to copy and paste into the edit box.
- 
-```text
 {
   "kind": "Template",
   "apiVersion": "v1",
@@ -459,15 +429,3 @@ or use the text below to copy and paste into the edit box.
     }
   ]
 }
-```
-
-When you click the create button you will be presented with a dialog that asks if you want to 'Process the template'
-or 'Save the template', select the process option and continue.
-
-When the next dialig is displayed scrolldown it until you find the section that mentions the IMAGE_STREAM_NAMESPACE with 
-a defaulted value of _openshift_. This field needs to be changed to _eap-demo' or the name of the project you imported the image stream into.
-After changing the field you can submit the dialog and build process.
-
-You will be presented with a final dialog informing you of what you have submitted and at the top will be a large link
-to the overview of the project. You can click this link and then watch the build process complete and then the deployment complete.
-This will take a few minutes.

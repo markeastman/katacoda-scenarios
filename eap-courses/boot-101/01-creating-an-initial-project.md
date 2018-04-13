@@ -19,14 +19,14 @@ Now we need to create a Project space in OpenShift for our API.  In OpenShift we
     oc new-project <projectname>
 ```
 
-For out project let's create a project called ``jberet-lab`` by running the command:
+For out project let's create a project called ``eap-demo`` by running the command:
 
-``oc new-project jberet-lab``{{execute}}
+``oc new-project eap-demo``{{execute}}
 
 You should see output similar to:
 
 ```
-Now using project "jberet-lab" on server "https://172.17.0.41:8443".
+Now using project "eap-demo" on server "https://172.17.0.41:8443".
 
 You can add applications to this project with the 'new-app' command. For example, try:
 
@@ -35,4 +35,4 @@ You can add applications to this project with the 'new-app' command. For example
 to build a new example application in Ruby.
 ```
 
-We are not going to use the web console for this course, but if you want to check anything from the web console, switch to the _Dashboard_ and  use the same credentials to login as you used above to login from the command line.
+We are not going to use the web console for this course, but if you want to check anything from the web console, switch to the _Browser_ and  use the same credentials to login as you used above to login from the command line.

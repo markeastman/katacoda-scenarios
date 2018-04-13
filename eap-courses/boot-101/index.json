@@ -4,7 +4,7 @@
   "description": "Learn to deploy Java EE server on OpenShift",
   "pathwayTitle": "Java EE course",
   "difficulty": "beginner",
-  "time": "5 minutes",
+  "time": "15 minutes",
   "backend": {
     "imageid": "openshift",
     "port": 8443
@@ -23,6 +23,9 @@
     }, {
       "title": "Step 2 - Deploying an New Application",
       "text": "02-deploying-a-new-application.md"
+    }, {
+      "title": "Step 3 - Checking the output",
+      "text": "03-checking-the-output.md"
     }],
     "intro": {
       "code": "set-env.sh",
@@ -35,6 +38,10 @@
       "host01": [
         {
           "file": "jboss-image-streams.json",
+          "target": "~/"
+        },
+        {
+          "file": "eap71-basic-s2i.json",
           "target": "~/"
         }
       ]
