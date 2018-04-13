@@ -1,12 +1,12 @@
 {
-  "pathwayTitle": "Java EE Course",
-  "title": "Java EE",
+  "pathwayTitle": "Red Hat EAP Course",
+  "title": "Red Hat EAP",
   "courses": [
     {
-      "external_link": "https://www.katacoda.com/markeastman/courses/eap-courses/boot-101",
-      "course_id": "boot-101",
-      "title": "boot 101",
-      "description": "This scenario is just a starter to show how to get WildFly 12 running"
+      "external_link": "https://www.katacoda.com/markeastman/courses/eap-courses/kitchensink",
+      "course_id": "kitchensink",
+      "description": "This scenario is just a starter to show how to get EAP 7.1 running with a starter",
+      "title": "kitchensink"
     }
   ]
 }
