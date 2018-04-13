@@ -464,7 +464,7 @@ or use the text below to copy and paste into the edit box.
 When you click the create button you will be presented with a dialog that asks if you want to 'Process the template'
 or 'Save the template', select the process option and continue.
 
-When the next dialig is displayed scrolldown it until you find the section that mentions the IMAGE_STREAM_NAMESPACE with 
+When the next dialig is displayed scrolldown it until you find the section that mentions the '* ImageStream Namespace' with 
 a defaulted value of _openshift_. This field needs to be changed to _eap-demo' or the name of the project you imported the image stream into.
 After changing the field you can submit the dialog and build process.
 

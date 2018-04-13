@@ -1,7 +1,7 @@
 {
   "icon": "fa-openshift",
-  "title": "Java EE Eample using WildFly",
-  "description": "Learn to deploy Java EE server on OpenShift",
+  "title": "Red Hat EAP 7.1 kitchensink example",
+  "description": "Learn to deploy Red Hat EAP 7.1 on OpenShift",
   "pathwayTitle": "Java EE course",
   "difficulty": "beginner",
   "time": "15 minutes",
