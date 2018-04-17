@@ -1,7 +1,7 @@
 {
   "icon": "fa-openshift",
-  "title": "Red Hat EAP 7.1 kitchensink example",
-  "description": "Learn to deploy Red Hat EAP 7.1 on OpenShift",
+  "title": "Red Hat EAP CD kitchensink example",
+  "description": "Learn to deploy Red Hat EAP CD on OpenShift",
   "pathwayTitle": "Red Hat EAP Course",
   "difficulty": "beginner",
   "time": "15 minutes",
@@ -37,11 +37,7 @@
     "assets": {
       "host01": [
         {
-          "file": "eap71-image-stream.json",
-          "target": "~/"
-        },
-        {
-          "file": "eap71-basic-s2i.json",
+          "file": "eap-cd-basic-s2i.json",
           "target": "~/"
         }
       ]

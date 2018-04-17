@@ -1,33 +1,3 @@
-We are going to run one of the samples that comes with eap called _kitchensink_. Katacoda itself does not come with
-the latest version of eap and so we have to inform the openshift environment how to use the latest image for eap.
-To do this we need to load the image stream from a public repository via the command:
-
-``oc replace --force -f https://raw.githubusercontent.com/jboss-openshift/application-templates/master/eap/eap71-image-stream.json``{{execute}}
-
-And the output should look something like this:
-
-```text
-imagestream "jboss-eap71-openshift" replaced
-```
-
-To create an application within the new project called 'eap-demo' we could issue a command to pull the template from
-a public repository:
-``oc replace --force -f https://raw.githubusercontent.com/jboss-openshift/application-templates/master/eap/eap71-basic-s2i.json``{{execute}}
-
-However the memory requirements of this template is set to 1 Gigabyte and this is normally too large for the environment to handle.
-In this case we are going to use a different process for creating the application within the project.
-
-Go to the _Browser_ tab and log in using the same developer userid as above. Within the overview click the eap-demo project if not already selected.
-On this page you should be able to see a large button called 'Add to project' or at the top right you should see the same text.
-Click the text to be shown the dialogue that will allow us to import the template directly. This page has three tab areas near
-the top, the catalogue, deploy image, and import YAML / JSON. We want to select the import YAML / JSON option.
-We need to paste the json for the reduced memory template into the main text box and then click the create button just below the edit box.
-
-Within the home folder of this environment I have added two files to help you. The first, _eap71-image-stream.json_, is a copy of the imagestream json file that you
-imported using the terminal. The second is a copy of the _eap71-basic-s2i.json_ file that is this required template. You can open the file and copy the text
-or use the text below to copy and paste into the edit box.
- 
-```text
 {
   "kind": "Template",
   "apiVersion": "v1",
@@ -35,21 +5,21 @@ or use the text below to copy and paste into the edit box.
     "annotations": {
       "iconClass": "icon-eap",
       "tags": "eap,javaee,java,jboss",
-      "version": "1.4.11",
-      "openshift.io/display-name": "JBoss EAP 7.1 (no https)",
+      "version": "1.4.10",
+      "openshift.io/display-name": "JBoss EAP CD (no https)",
       "openshift.io/provider-display-name": "Red Hat, Inc.",
-      "description": "An example EAP 7 application. For more information about using this template, see https://github.com/jboss-openshift/application-templates.",
-      "template.openshift.io/long-description": "This template defines resources needed to develop Red Hat Enterprise Application Server 7.1 based application, including a build configuration, application deployment configuration and insecure communication using http.",
+      "description": "An example JBoss Enterprise Application Platform continuous delivery application. For more information about using this template, see https://github.com/jboss-container-images/jboss-eap-7-openshift-image/blob/eap-cd/README.adoc",
+      "template.openshift.io/long-description": "This template defines resources needed to develop a JBoss Enterprise Application Platform continuous delivery based application, including a build configuration, application deployment configuration and insecure communication using http.",
       "template.openshift.io/documentation-url": "https://access.redhat.com/documentation/en/red-hat-jboss-enterprise-application-platform/",
       "template.openshift.io/support-url": "https://access.redhat.com"
     },
-    "name": "eap71-basic-s2i"
+    "name": "eap-cd-basic-s2i"
   },
   "labels": {
-    "template": "eap71-basic-s2i",
-    "xpaas": "1.4.11"
+    "template": "eap-cd-basic-s2i",
+    "xpaas": "1.4.10"
   },
-  "message": "A new EAP 7 based application has been created in your project.",
+  "message": "A new JBoss EAP CD based application has been created in your project.",
   "parameters": [
     {
       "displayName": "Application Name",
@@ -59,24 +29,17 @@ or use the text below to copy and paste into the edit box.
       "required": true
     },
     {
-      "displayName": "Custom http Route Hostname",
-      "description": "Custom hostname for http service route.  Leave blank for default hostname, e.g.: <application-name>-<project>.<default-domain-suffix>",
-      "name": "HOSTNAME_HTTP",
-      "value": "",
-      "required": false
-    },
-    {
       "displayName": "Git Repository URL",
       "description": "Git source URI for application",
       "name": "SOURCE_REPOSITORY_URL",
-      "value": "https://github.com/jboss-developer/jboss-eap-quickstarts",
+      "value": "https://github.com/jboss-developer/jboss-eap-quickstarts.git",
       "required": true
     },
     {
       "displayName": "Git Reference",
       "description": "Git branch/tag reference",
       "name": "SOURCE_REPOSITORY_REF",
-      "value": "7.1.0.GA",
+      "value": "openshift",
       "required": false
     },
     {
@@ -128,7 +91,7 @@ or use the text below to copy and paste into the edit box.
       "displayName": "ImageStream Namespace",
       "description": "Namespace in which the ImageStreams for Red Hat Middleware images are installed. These ImageStreams are normally installed in the openshift namespace. You should only need to modify this if you've installed the ImageStreams in a different namespace/project.",
       "name": "IMAGE_STREAM_NAMESPACE",
-      "value": "openshift",
+      "value": "eap-demo",
       "required": true
     },
     {
@@ -238,7 +201,6 @@ or use the text below to copy and paste into the edit box.
         }
       },
       "spec": {
-        "host": "${HOSTNAME_HTTP}",
         "to": {
           "name": "${APPLICATION_NAME}"
         }
@@ -293,7 +255,7 @@ or use the text below to copy and paste into the edit box.
             "from": {
               "kind": "ImageStreamTag",
               "namespace": "${IMAGE_STREAM_NAMESPACE}",
-              "name": "jboss-eap71-openshift:1.2"
+              "name": "eap-cd-openshift:12"
             }
           }
         },
@@ -459,15 +421,3 @@ or use the text below to copy and paste into the edit box.
     }
   ]
 }
-```
-
-When you click the create button you will be presented with a dialog that asks if you want to 'Process the template'
-or 'Save the template', select the process option and continue.
-
-When the next dialig is displayed scrolldown it until you find the section that mentions the '* ImageStream Namespace' with 
-a defaulted value of _openshift_. This field needs to be changed to _eap-demo' or the name of the project you imported the image stream into.
-After changing the field you can submit the dialog and build process.
-
-You will be presented with a final dialog informing you of what you have submitted and at the top will be a large link
-to the overview of the project. You can click this link and then watch the build process complete and then the deployment complete.
-This will take a few minutes.
