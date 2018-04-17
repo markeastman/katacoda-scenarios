@@ -37,7 +37,7 @@
     "assets": {
       "host01": [
         {
-          "file": "jboss-image-stream.json",
+          "file": "eap71-image-stream.json",
           "target": "~/"
         },
         {
