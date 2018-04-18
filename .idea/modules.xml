@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eap-courses/eap-courses.iml" filepath="$PROJECT_DIR$/eap-courses/eap-courses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/experiments/experiments.iml" filepath="$PROJECT_DIR$/experiments/experiments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/experiments/hello-world/hello-world.iml" filepath="$PROJECT_DIR$/experiments/hello-world/hello-world.iml" />
+      <module fileurl="file://$PROJECT_DIR$/experiments/my-first-scenario/my-first-scenario.iml" filepath="$PROJECT_DIR$/experiments/my-first-scenario/my-first-scenario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/experiments/my-second-scenario/my-second-scenario.iml" filepath="$PROJECT_DIR$/experiments/my-second-scenario/my-second-scenario.iml" />
+    </modules>
+  </component>
+</project>
