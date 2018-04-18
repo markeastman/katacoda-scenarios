@@ -12,7 +12,7 @@ imagestream "jboss-eap71-openshift" replaced
 
 To create an application within the new project called 'eap-demo' we could issue a command to pull the template from
 a public repository:
-``oc replace --force -f https://raw.githubusercontent.com/jboss-openshift/application-templates/master/eap/eap71-basic-s2i.json``{{execute}}
+``oc replace --force -f https://raw.githubusercontent.com/jboss-openshift/application-templates/master/eap/eap71-basic-s2i.json``
 
 However the memory requirements of this template is set to 1 Gigabyte and this is normally too large for the environment to handle.
 In this case we are going to use a different process for creating the application within the project.
