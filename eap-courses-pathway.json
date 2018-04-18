@@ -6,7 +6,13 @@
       "external_link": "https://www.katacoda.com/markeastman/courses/eap-courses/kitchensink",
       "course_id": "kitchensink",
       "description": "This scenario is just a starter to show how to get EAP 7.1 running with a starter",
-      "title": "EAP with kitchensink"
+      "title": "EAP 7.1 with kitchensink"
+    },
+    {
+      "external_link": "https://www.katacoda.com/markeastman/courses/eap-courses/eap-cd/kitchensink",
+      "course_id": "eap-cd-kitchensink",
+      "description": "This scenario is just a starter to show how to get EAP CD running with a starter",
+      "title": "EAP CD with kitchensink"
     }
   ]
 }
