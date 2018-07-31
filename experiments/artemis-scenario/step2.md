@@ -22,6 +22,7 @@ can copy the sample one I have supplied in the root folder, so execute one of th
 or
 
 ``vi /var/lib/artemisBroker/etc/bootstrap.xml``{{execute}}
+
 and now change the localhost to be 0.0.0.0 within the web config area.
 save the changes and then we can start the broker in the background, which will inturn create
 the web server that allows console access. You will notice within the above config that the
