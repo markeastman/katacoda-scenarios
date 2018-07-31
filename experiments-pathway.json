@@ -16,6 +16,11 @@
       "external_link": "https://www.katacoda.com/markeastman/courses/experiments/my-second-scenario",
       "course_id": "my-second-scenario",
       "title": "My second scenario"
+    },
+    {
+      "external_link": "https://www.katacoda.com/markeastman/courses/experiments/artemis-scenario",
+      "course_id": "artemis-scenario",
+      "title": "Artemis scenario"
     }
   ]
 }

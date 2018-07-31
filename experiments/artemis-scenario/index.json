@@ -1,0 +1,31 @@
+{
+  "title": "Artemis broker within uduntu",
+  "description": "Run an Artemis broker",
+  "details": {
+    "steps": [
+      { "title": "Create the broker environment", "text": "step1.md",
+        "code": "env-init.sh" }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "dashboards": [{ "name": "Browser", "port": 80, "host": "host01" }]
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
