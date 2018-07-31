@@ -14,10 +14,7 @@
     },
     "assets": {
       "host01": [
-        {
-          "file": "apache-artemis-2.6.2-bin.tar",
-          "target": "~/"
-        },
+
         {
           "file": "index.html",
           "target": "~/"
