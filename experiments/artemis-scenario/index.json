@@ -17,6 +17,7 @@
       "host01": [
         { "file": "bootstrap.xml", "target": "~/" },
         { "file": "jolokia-access.xml", "target": "~/" },
+        { "file": "Dockerfile", "target": "~/" },
         { "file": "index.html", "target": "~/" }
       ]
     }
