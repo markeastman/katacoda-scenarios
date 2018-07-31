@@ -1,8 +1,3 @@
-We should go and get the latest version of Artemis but at the moment I do not know how
-do to this so I have included a version of the tar file in the root folder
-
-``ls -l``{{execute}}
-
 We need to get an artemis download but for now I do not have a way to detect the
 latest version and get that. You could change the following command to get the latest if
 you know which one it is.
