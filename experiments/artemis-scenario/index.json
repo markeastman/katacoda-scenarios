@@ -3,8 +3,8 @@
   "description": "Run an Artemis broker",
   "details": {
     "steps": [
-      { "title": "Download the broker", "text": "step1.md" },
-      { "title": "Create the broker instance", "text": "step2.md" }
+      { "title": "Download the broker", "text": "download.md" },
+      { "title": "Create the broker instance", "text": "create.md" }
     ],
     "intro": {
       "text": "intro.md"
