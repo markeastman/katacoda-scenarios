@@ -4,7 +4,8 @@
   "details": {
     "steps": [
       { "title": "Download the broker", "text": "download.md" },
-      { "title": "Create the broker instance", "text": "create.md" }
+      { "title": "Create the broker instance", "text": "create.md" },
+      { "title": "Run a docker web server", "text": "dockerWebServer.md" }
     ],
     "intro": {
       "text": "intro.md"
@@ -17,13 +18,20 @@
         {
           "file": "bootstrap.xml",
           "target": "~/"
+        },
+        {
+          "file": "index.html",
+          "target": "~/"
         }
       ]
     }
   },
   "environment": {
     "uilayout": "terminal-iframe",
-    "dashboards": [{ "name": "console", "port": 8161, "host": "host01" }]
+    "dashboards": [
+      { "name": "console", "port": 8161, "host": "host01" },
+      { "name": "clients", "port": 80, "host": "host01" }
+    ]
   },
   "backend": {
     "imageid": "ubuntu"
