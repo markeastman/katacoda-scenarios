@@ -28,6 +28,20 @@ save the changes and then we can start the broker in the background, which will 
 the web server that allows console access. You will notice within the above config that the
 default port for the web server is 8161 but this can be changed within the same configuration.
 
+In addition to the web server address we need to change the CORS access to the site. This
+is done within the etc/jolokia-access.xml file as per the bootstrap.xml file.
+
+You can either amend the jolokia-access.xml file within the broker area , or you can 
+copy the sample I have supplied.
+
+``cp ~/jolokia-access.xml /var/lib/artemisBroker/etc``{{execute}}
+
+or
+
+``vi /var/lib/artemisBroker/etc/jolokia-access.xml``{{execute}}
+
+and remove the localhost from the access line.
+
 Finally start the broker in the background
 
 ``/var/lib/artemisBroker/bin/artemis-service start``{{execute}}

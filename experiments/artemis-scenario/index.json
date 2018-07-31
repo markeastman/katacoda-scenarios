@@ -15,14 +15,9 @@
     },
     "assets": {
       "host01": [
-        {
-          "file": "bootstrap.xml",
-          "target": "~/"
-        },
-        {
-          "file": "index.html",
-          "target": "~/"
-        }
+        { "file": "bootstrap.xml", "target": "~/" },
+        { "file": "jolokia-access.xml", "target": "~/" },
+        { "file": "index.html", "target": "~/" }
       ]
     }
   },
