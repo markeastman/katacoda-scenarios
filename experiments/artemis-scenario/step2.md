@@ -8,6 +8,18 @@ To get started we can set:
     password=admin
     allow-anonymous=N
 
+Before we start the broker we need to edit a config file that controls the booting of the
+console. By default this is secured such that only the server upon which the broker is running 
+is able to connect to the console. For this example we need to open it up so that any client
+can connect to the broker console. Note, in a production environment this would be very 
+dangerous as the console provides a lot of capabilities to the end user.
+
+``vi /var/lib/artemisBroker/etc/bootstrap.xml``{{execute}}
+and now change the localhost to be 0.0.0.0 within the web config area.
+save the changes and then we can start the broker in the background, which will inturn create
+the web server that allows console access. You will notice within the above config that the
+default port for the web server is 8161 but this can be changed within the same configuration.
+
 Finally start the broker in the background
 
 ``/var/lib/artemisBroker/bin/artemis-service start``{{execute}}
