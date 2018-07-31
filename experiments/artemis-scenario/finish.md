@@ -1,1 +1,5 @@
-You saw two commands to build and then run a docker image with a web server inside it
+We have download a version of Artemis broker and started it.
+
+Before we finish we should close it down gracefully
+``/var/lib/artemisBroker/bin/artemis stop``{{execute}}
+

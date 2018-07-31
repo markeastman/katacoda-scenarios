@@ -3,8 +3,8 @@
   "description": "Run an Artemis broker",
   "details": {
     "steps": [
-      { "title": "Create the broker environment", "text": "step1.md",
-        "code": "env-init.sh" }
+      { "title": "Download the broker", "text": "step1.md" },
+      { "title": "Create the broker instance", "text": "step2.md" }
     ],
     "intro": {
       "text": "intro.md"
@@ -23,7 +23,7 @@
   },
   "environment": {
     "uilayout": "terminal-iframe",
-    "dashboards": [{ "name": "Browser", "port": 80, "host": "host01" }]
+    "dashboards": [{ "name": "console", "port": 8161, "host": "host01" }]
   },
   "backend": {
     "imageid": "ubuntu"

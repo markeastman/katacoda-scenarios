@@ -1,5 +1,3 @@
-You will see the commands execute within the terminal for you
-
 We should go and get the latest version of Artemis but at the moment I do not know how
 do to this so I have included a version of the tar file in the root folder
 
@@ -22,3 +20,5 @@ And now we should have the exploded folder with artemis within
 Finally we can now set the environment variable to point to ARTEMIS
 
 ``export ARTEMIS_HOME=`pwd`/apache-artemis-2.6.2``{{execute}}
+
+We will now create a broker instance in the next step
