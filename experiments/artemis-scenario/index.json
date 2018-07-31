@@ -1,5 +1,5 @@
 {
-  "title": "Artemis broker within uduntu",
+  "title": "Artemis broker within ubuntu",
   "description": "Run an Artemis broker",
   "details": {
     "steps": [
@@ -14,7 +14,10 @@
     },
     "assets": {
       "host01": [
-
+        {
+          "file": "apache-artemis-2.6.2-bin.tar",
+          "target": "~/"
+        },
         {
           "file": "index.html",
           "target": "~/"

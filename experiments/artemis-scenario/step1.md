@@ -1,6 +1,9 @@
 You will see the commands execute within the terminal for you
 
-docker build
+We should go and get the latest version of Artemis but at the moment I do not know how
+do to this so I have included a version of the tar file in the root folder
+
+``ls -l``{{execute}}
 
 docker run
 
