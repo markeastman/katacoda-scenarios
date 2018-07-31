@@ -15,7 +15,7 @@
     "assets": {
       "host01": [
         {
-          "file": "*",
+          "file": "index.html",
           "target": "~/"
         }
       ]
