@@ -30,6 +30,6 @@
     ]
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "java8"
   }
 }
